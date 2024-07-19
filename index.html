@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="indes.css">
+</head>
+<body>
+    <script src="index.js"></script><!--Página de animação-->
+    <div class="main">
+        <div class="cabecalho">
+
+                <h3>Calculadora - IMC</h3>
+
+        </div><!--cabecalho-->
+
+        <div class="dados">
+
+            <form id="formulario">
+
+                <div class="nome">
+
+                    <label for="nome">Nome: </label>
+                    <input type="text" name="nome" id="nome" placeholder="Ex: Ana" required>
+
+                </div><!--nome-->
+
+                <div class="altura">
+
+                    <label for="altura">Altura: </label>
+                    <input type="number" name="altura" id="altura" placeholder="Ex: 1,80" required>
+
+                </div><!--altura-->
+
+                <div class="peso">
+
+                    <label for="peso">Peso: </label>
+                    <input type="number" name="peso" id="peso" placeholder="Ex: 85,5" required>
+
+                </div><!--peso-->
+
+            </form><!--formulario-->
+                
+        </div><!--dados-->
+
+        <div class="botao">
+
+            <button onclick="obterValor()">Calcular</button>
+
+        </div><!--botao-->
+
+        <div class="area-resultado">
+
+            <textarea name="area-resultado" id="resultado" style="resize: none;" placeholder="Resultado..."></textarea>
+
+        </div><!--area-resultado-->
+    </div><!--main-->
+
+    
+</body>
+</html>
